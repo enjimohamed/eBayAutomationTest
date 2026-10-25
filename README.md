@@ -1,36 +1,44 @@
-Overview
-This project automates the testing of the eBay website using Selenium WebDriver, Java, and TestNG.
-It follows the Page Object Model (POM) design pattern to organize page interactions and test logic.
+# eBay Web Test Automation
 
-Technologies Used
-Java
-Selenium WebDriver
-TestNG
-Maven
-IntelliJ IDEA
-Google Chrome
+Automates the following user flow on https://www.ebay.com/ using Selenium WebDriver, Java and TestNG, following the Page Object Model.
 
-Prerequisites
-Before running the project, ensure you have installed:
-JDK 19 or a compatible Java version
-IntelliJ IDEA
-Google Chrome
-Maven (or use the Maven Wrapper if included)
+## Test Scenario
+1. Open the eBay website
+2. Verify the home page is displayed
+3. Search for "mazda mx-5"
+4. Verify the search results are displayed
+5. Log the number of search results (products displayed on the page, plus eBay's reported total)
+6. Open the first search result
+7. Verify the item details page is displayed
 
-Test Scenario
-The automated test performs the following steps:
-Opens the eBay website.
-Verifies that the homepage is displayed.
-Searches for "mazda mx-5".
-Verifies and logs the number of search results.
-Opens the first search result.
-Verifies that the item details page is displayed.
+## Technologies
+- Java 19
+- Selenium WebDriver 4
+- TestNG
+- Maven
+- Google Chrome
 
-How to Run the Project
-Clone or download this repository.
-Open the project in IntelliJ IDEA.
-Allow Maven to import the dependencies from pom.xml.
-Locate the ebaytest TestNG class.
-Right-click the class and select Run 'ebaytest'.
+## Prerequisites
+- JDK 19 or a compatible version
+- Maven 3.6+
+- Google Chrome (the driver is downloaded automatically by Selenium Manager)
 
+## How to Run
 
+**From the command line**
+```bash
+git clone <your-repo-url>
+cd eBayAutomationTest
+mvn clean test
+```
+
+**From IntelliJ IDEA**
+1. Open the project and let Maven import the dependencies from `pom.xml`
+2. Open the `eBayTest` class
+3. Right-click it and choose **Run 'eBayTest'**
+
+## Output
+The number of search results is printed in the console.
+
+## Demo
+[Video link]
