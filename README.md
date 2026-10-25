@@ -22,9 +22,10 @@
 - Google Chrome 
 
 ## How to Run
-1.Clone or download this repository.
-2.Open the project in IntelliJ IDEA.
-3.Allow Maven to import the dependencies from pom.xml.
-4.Ensure that Java and Google Chrome are installed.
-5.Locate the ebaytest TestNG class.
-6.Right-click the class and select Run 'ebaytest'.
+1.Clone or download this repository  
+2.Open the project in IntelliJ IDEA  
+3.Allow Maven to import the dependencies from pom.xml  
+4.Ensure that Java and Google Chrome are installed  
+5.Locate the ebaytest TestNG class  
+6.Right-click the class and select Run 'TestingeBay'  
+
